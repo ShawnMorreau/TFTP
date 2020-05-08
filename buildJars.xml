@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_jars" name="Create Runnable Jars for the TFTP Project with Jar-in-Jar Loader">
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_jars">
+        <jar destfile="${dir.jarfile}/client.jar">
+            <manifest>
+                <attribute name="Main-Class" value="app.ClientController"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/bin"/>
+        </jar>
+        <jar destfile="${dir.jarfile}/errorsimulator.jar">
+            <manifest>
+                <attribute name="Main-Class" value="app.ErrorSimulator"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+        	<fileset dir="${dir.jarfile}/bin"/>
+        </jar>
+        <jar destfile="${dir.jarfile}/server.jar">
+            <manifest>
+                <attribute name="Main-Class" value="app.ServerController"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/bin"/>
+        </jar>
+    </target>
+</project>

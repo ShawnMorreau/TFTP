@@ -1,0 +1,32 @@
+Iteration 1
+-----------
+Abe: README.txt, Client changes + ClientController, GUI, ErrorSimulator, Packet, also made adjustments to all Packet classes
+Shawn: FileParser, AcknowledgementPacket
+Rafael: Server changes + ServerController, Connection, UCM's, GUI
+Karim: ReadRequestPacket, WriteRequestPacket, DataPacket
+Team: UML diagram, reviewed over many classes to improve code/performance
+
+Iteration 2
+-----------
+Abe: README.txt, Unit tests, bugfixes, UML class diagram update
+Shawn: Error code 2 code, Timing diagrams for error code 2 & 6
+Rafael: Error code 3
+Karim: Error code 1 code
+
+Iteration 3
+-----------
+Abe: Refactored with socket class to resent/timeout, timing diagrams
+Shawn: General bug fixes, fixed an error with securityException, added many verbose outputs that were missing
+Karim: Error simulator menu and packet loss/delay/duplication functionality
+
+Iteration 4
+-----------
+Abe: Implemented error code 4, added a timing diagram for error code 4
+Shawn: Implemented error code 5, Timing diagram for error code 4 and 5
+Karim: Added new functionality to ErrorSimulator to account for new errors
+
+Iteration 5
+-----------
+Abe: Implemented connecting client to other hosts, allow corrupt packets to be printed/identified, bug fixes
+Karim: Missing ErrorSimulator features from iteration 4
+Shawn: File read security fixes, additional tests in sim, bug fixes
